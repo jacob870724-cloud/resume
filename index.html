@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的個人介紹</title>
+    <style>
+        :root {
+            --primary-color: #4CAF50;
+            --text-color: #333;
+            --bg-color: #f9f9f9;
+            --card-bg: #fff;
+        }
+
+        body {
+            font-family: 'Microsoft JhengHei', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--primary-color);
+        }
+
+        h1 {
+            margin: 20px 0 10px;
+            color: #222;
+        }
+
+        .tagline {
+            color: var(--primary-color);
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            background: var(--card-bg);
+            margin-top: 20px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .section h2 {
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-top: 0;
+            color: #222;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background-color: #e8f5e9;
+            color: var(--primary-color);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .contact-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <!-- 請將 src 後方的網址替換為您的個人照片網址，或放同一資料夾的檔名(例如 photo.jpg) -->
+        <img src="https://placeholder.com" alt="大頭照">
+        <h1>王小明</h1>
+        <p class="tagline">熱愛前端開發的軟體工程師</p>
+    </header>
+
+    <div class="section">
+        <h2>關於我</h2>
+        <p>您好！我是一名充滿熱忱的軟體工程師，專注於網頁前端開發與 UI/UX 設計。我喜歡透過簡潔、優雅的程式碼，打造出流暢且使用者體驗極佳的網站應用程式。不斷學習新技術是我保持動力來源。</p>
+    </div>
+
+    <div class="section">
+        <h2>專業技能</h2>
+        <div class="skills-list">
+            <span class="skill-tag">HTML5 / CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React.js</span>
+            <span class="skill-tag">Vue.js</span>
+            <span class="skill-tag">UI/UX 設計</span>
+            <span class="skill-tag">Git / GitHub</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>聯絡方式</h2>
+        <p>如果您對我的作品有興趣，或者有任何合作的機會，歡迎隨時與我聯繫！</p>
+        <div class="contact-info">
+            <a href="mailto:your-email@example.com" class="contact-btn">發送 Email 聯繫我</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
